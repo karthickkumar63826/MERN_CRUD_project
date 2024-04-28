@@ -142,7 +142,7 @@ const Item = () => {
               />
             </Form.Group>
             <Button variant="primary" type="submit">
-              Submit
+              {isEditable ? "Update" : "Submit"}
             </Button>{" "}
             <Button variant="danger" onClick={() => setProducts(initialValue)}>
               Reset
